@@ -207,6 +207,7 @@
             btn_fill.Text = "fill";
             btn_fill.TextAlign = ContentAlignment.BottomCenter;
             btn_fill.UseVisualStyleBackColor = false;
+            btn_fill.Click += btn_fill_Click;
             // 
             // pic_color
             // 
@@ -286,6 +287,7 @@
             pic.TabStop = false;
             pic.Click += pictureBox1_Click;
             pic.Paint += pic_Paint;
+            pic.MouseClick += pic_MouseClick;
             pic.MouseDown += pic_MouseDown;
             pic.MouseMove += pic_MouseMove;
             pic.MouseUp += pic_MouseUp;
