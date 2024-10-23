@@ -23,6 +23,9 @@ namespace PAint
         int index;
         int x, y, sX, sY, cX, cY;
 
+        ColorDialog cd = new ColorDialog();
+        Color new_color;
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -33,9 +36,7 @@ namespace PAint
 
         }
 
-
-
-        private void btn_color_Click(object sender, EventArgs e)
+        private void color_picker_Click(object sender, EventArgs e)
         {
 
         }
@@ -146,6 +147,28 @@ namespace PAint
             g.Clear(Color.White);
             pic.Image = bm;
             index = 0;
+        }
+
+        private void btn_color_Click(object sender, EventArgs e)
+        {
+            cd.ShowDialog();
+            new_color = cd.Color;
+            pic_color.BackColor = cd.Color;
+            p.Color = cd.Color;
+        }
+        static Point set_point(PictureBox pb, Point pt)
+        {
+            float pX = 1f * pb.Image.Width / pb.Width;
+            float pY = 1f * pb.Image.Height / pb.Height;
+            return new Point((int)(pt.X * pX), (int)(pt.Y * pY));
+        }
+
+        private void color_picker_MouseClick(object sender, MouseEventArgs e)
+        {
+            Point point = set_point(color_picker, e.Location);
+            pic_color.BackColor = ((Bitmap)color_picker.Image).GetPixel(point.X, point.Y);
+            new_color = pic_color.BackColor;
+            p.Color = pic_color.BackColor;
         }
     }
 }

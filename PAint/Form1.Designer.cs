@@ -71,6 +71,7 @@
             // btn_save
             // 
             btn_save.BackColor = Color.FromArgb(200, 150, 170);
+            btn_save.Cursor = Cursors.Hand;
             btn_save.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 195, 194);
             btn_save.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn_save.FlatStyle = FlatStyle.Flat;
@@ -86,6 +87,7 @@
             // btn_clear
             // 
             btn_clear.BackColor = Color.FromArgb(200, 150, 170);
+            btn_clear.Cursor = Cursors.Hand;
             btn_clear.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 195, 194);
             btn_clear.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn_clear.FlatStyle = FlatStyle.Flat;
@@ -101,6 +103,7 @@
             // 
             // color_picker
             // 
+            color_picker.Cursor = Cursors.Hand;
             color_picker.Image = Properties.Resources.color_palette;
             color_picker.Location = new Point(3, 0);
             color_picker.Name = "color_picker";
@@ -108,10 +111,13 @@
             color_picker.SizeMode = PictureBoxSizeMode.StretchImage;
             color_picker.TabIndex = 0;
             color_picker.TabStop = false;
+            color_picker.Click += color_picker_Click;
+            color_picker.MouseClick += color_picker_MouseClick;
             // 
             // btn_rect
             // 
             btn_rect.BackColor = Color.FromArgb(200, 150, 170);
+            btn_rect.Cursor = Cursors.Hand;
             btn_rect.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 195, 194);
             btn_rect.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn_rect.FlatStyle = FlatStyle.Flat;
@@ -130,6 +136,7 @@
             // btn_ellipse
             // 
             btn_ellipse.BackColor = Color.FromArgb(200, 150, 170);
+            btn_ellipse.Cursor = Cursors.Hand;
             btn_ellipse.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 195, 194);
             btn_ellipse.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn_ellipse.FlatStyle = FlatStyle.Flat;
@@ -148,6 +155,7 @@
             // btn_eraser
             // 
             btn_eraser.BackColor = Color.FromArgb(200, 150, 170);
+            btn_eraser.Cursor = Cursors.Hand;
             btn_eraser.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 195, 194);
             btn_eraser.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn_eraser.FlatStyle = FlatStyle.Flat;
@@ -166,6 +174,7 @@
             // btn_pencil
             // 
             btn_pencil.BackColor = Color.FromArgb(200, 150, 170);
+            btn_pencil.Cursor = Cursors.Hand;
             btn_pencil.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 195, 194);
             btn_pencil.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn_pencil.FlatStyle = FlatStyle.Flat;
@@ -184,6 +193,7 @@
             // btn_fill
             // 
             btn_fill.BackColor = Color.FromArgb(200, 150, 170);
+            btn_fill.Cursor = Cursors.Hand;
             btn_fill.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 195, 194);
             btn_fill.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn_fill.FlatStyle = FlatStyle.Flat;
@@ -221,6 +231,7 @@
             // btn_color
             // 
             btn_color.BackColor = Color.FromArgb(200, 150, 170);
+            btn_color.Cursor = Cursors.Hand;
             btn_color.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 195, 194);
             btn_color.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn_color.FlatStyle = FlatStyle.Flat;
@@ -239,6 +250,7 @@
             // btn_line
             // 
             btn_line.BackColor = Color.FromArgb(200, 150, 170);
+            btn_line.Cursor = Cursors.Hand;
             btn_line.FlatAppearance.MouseDownBackColor = Color.FromArgb(245, 195, 194);
             btn_line.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn_line.FlatStyle = FlatStyle.Flat;
